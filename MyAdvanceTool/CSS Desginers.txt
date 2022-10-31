@@ -1,0 +1,54 @@
+10 Best CSS Code Generators for 2022 | by Imia Hazel | Bootcamp
+https://bootcamp.uxdesign.cc/10-best-css-code-generators-for-2022-e9d0b8835e90
+
+Animista - CSS Animations on Demand
+https://animista.net/play/basic/scale-up/scale-up-br
+
+10 Best CSS Code Generators for Web Developers - Hongkiat
+https://www.hongkiat.com/blog/css-code-generator-web-apps/
+
+CSS Gradient — Generator, Maker, and Background
+https://cssgradient.io/
+
+CSS Grid Generator
+https://cssgrid-generator.netlify.app/
+
+CSS3 Generator
+http://css3generator.com/
+
+eggbox.io
+http://ww25.waitanimate.eggbox.io/?subid1=20220619-0300-0413-995a-993662fde53d
+
+CSS Code Generators
+https://html-css-js.com/css/generator/
+
+Get Waves – Create SVG waves for your next design
+https://getwaves.io/
+
+CSS Layout Generator
+https://layout.bradwoods.io/customize
+
+Bootstrap 4 Interface Builder | LayoutIt!
+https://www.layoutit.com/build
+
+Glassmorphism CSS Generator | Hype4 Academy
+https://hype4.academy/tools/glassmorphism-generator
+
+Animated CSS Background Generator | wweb.dev
+https://wweb.dev/resources/animated-css-background-generator/
+
+Free API - Huge List of Public APIs For Testing [No Key] - Apipheny
+https://apipheny.io/free-api/
+
+React Icons
+https://react-icons.github.io/react-icons/icons?name=fi
+
+How to implement a server for ReactJS and MySQL application
+https://www.educative.io/answers/how-to-implement-a-server-for-reactjs-and-mysql-application
+
+Blog-React-CRUD-MYSQL/server at master · NasreenKhalid/Blog-React-CRUD-MYSQL
+https://github.com/NasreenKhalid/Blog-React-CRUD-MYSQL/tree/master/server
+
+Big List of Free and Open Public APIs (No Auth Needed) [2022]
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+

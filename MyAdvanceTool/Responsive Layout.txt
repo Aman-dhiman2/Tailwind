@@ -1,0 +1,4 @@
+-- use Tailwind tailblocks for the responsive layout 
+
+
+-- https://app.tailwinduikit.com/components

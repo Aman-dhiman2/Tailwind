@@ -1,0 +1,21 @@
+// Add this in the app.js file indside App functions 
+
+ const [darkMode, setDarkMode] = useState(false);
+  const handleClick = () => {
+    setDarkMode((current) => !current);
+    //setDarkMode(true);
+  };
+
+
+// Then Add the Style with DIV tags 
+
+<div
+        className="darkmodebtn"
+        style={{
+          backgroundColor: darkMode ? "salmon" : "",
+          color: darkMode ? "white" : "",
+        }}
+      >
+</div>
+
+// Set the Another Colors and Background colors

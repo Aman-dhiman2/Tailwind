@@ -1,0 +1,200 @@
+Create two folder 
+1. Client 
+2. Server 
+
+
+//in one folder like (reactapp) folder -> use
+
+npm init -y 
+npm i express 
+
+//in package.json (Check)
+
+"scripts": {
+  "start": "node server/index.js"
+},
+
+and 
+
+{
+  "name": "react-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+
+
+//create folder name (server)
+
+- inside server create index.js
+
+// server/index.js
+
+const express = require("express");
+
+const PORT = process.env.PORT || 3001;
+
+const app = express();
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});
+
+// Run 
+
+npm start
+
+> node server/index.js
+
+Server listening on 3001
+
+
+// add this in the //server/index.js
+
+app.get("/api", (req, res) => {
+  res.json({ message: "Hello from Express!" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});
+
+
+// use this link 
+
+ http://localhost:3001/api
+
+{"message": "Hello from Express"}
+
+// create react app as client 
+
+// client/package.json
+
+...
+"proxy": "http://localhost:3001",
+...
+
+// and check 
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001"
+}
+
+// Now, Finally ready 
+
+cd client
+npm start
+
+
+// Add this inside the 
+// client/src/App.js
+
+
+
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+function App() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>{!data ? "Loading..." : data}</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+// All Set !!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
